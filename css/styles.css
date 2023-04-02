@@ -30,7 +30,19 @@ ul {
 button {
   cursor: pointer;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 address {
   font-style: normal;
 }
@@ -482,10 +494,7 @@ img {
   background-color: transparent;
   padding-left: 16px;
 }
-/* .form-telegram {
-  display: flex;
-  justify-content: center;
-} */
+
 .subscribe-svg {
   fill: #ffffff;
 }
@@ -508,11 +517,7 @@ img {
 
   color: #ffffff;
 }
-/* .form-div-cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .footer-wrap {
   display: flex;
   align-items: center;
@@ -578,7 +583,11 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 24px;
+
   margin-bottom: 48px;
+}
+.images-list {
+  width: 360px;
 }
 
 .images-img {
@@ -621,9 +630,7 @@ img {
 
   color: var(--link-color);
 }
-.images-list {
-  width: 360px;
-}
+
 .images-list:hover .img-cover-text {
   transform: translateY(0);
 }
@@ -643,8 +650,8 @@ img {
 
   background-color: var(--add-color);
   height: 100%;
-  padding: 40px 32px 0px;
   width: 100%;
+  padding: 40px 32px 0px;
   transform: translateY(100%);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -852,7 +859,7 @@ img {
   padding: 16px 32px 16px 32px;
   background: var(--add-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-color: transparent;
+  border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -883,4 +890,41 @@ img {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.checkbox-text {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-checkbox {
+  color: #8e8f99;
+}
+
+.checkbox-text span {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox:checked + .checkbox-text span {
+  background-color: var(--hover-color);
+  border: none;
+  fill: var(--white-color);
+}
+.modal-checkbox:focus + .checkbox-text span {
+  border-color: var(--hover-color);
 }
