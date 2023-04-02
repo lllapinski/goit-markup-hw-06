@@ -438,19 +438,98 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-soc-email">
+          <p class="text-subscribe">Subscribe</p>
+          <label for="email"></label>
+          <div class="footer-wrap">
+           
+                <input
+                  type="email"
+                  class="subscribe-form"
+                  placeholder="E-mail"
+                  id="email"
+                  name="email"
+                />
+              </li>
+              <li class="foot-telegram-items">
+                <button class="button-footer-subscribe" type="submit">
+                  Subscribe
+                  <svg width="24" height="20" class="subscribe-svg">
+                    <use href="./images/telegram-icon.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+            
+          </div>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
-          <a class="close-svg-link link" href>
-            <svg width="8" height="8" class="close">
-              <use
-                href="./images/modallllll.svg#icon-close-black-18dp-2-1"
-              ></use>
-            </svg>
-          </a>
+          <svg width="8" height="8" class="close">
+            <use href="./images/modallllll.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="label-input" for="user-name">Name</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                required
+                id="user-name"
+              />
+              <svg width="12" height="12" class="modal-svg">
+                <use href="./images/iicons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="label-input" for="user-tel">Phone</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-tel"
+                required
+                id="user-tel"
+              />
+              <svg width="13" height="13" class="modal-svg">
+                <use href="./images/iicons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="label-input" for="user-email">Email</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg width="15" height="12" class="modal-svg">
+                <use href="./images/iicons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <label class="label-input" for="textarea-input">Comment</label>
+          <textarea
+            class="modal-textarea"
+            placeholder="Text input"
+            name="textarea-input"
+            id="textarea-input"
+          ></textarea>
+          <div class="div-btn">
+            <button class="send-btn" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
