@@ -454,10 +454,11 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-soc-email {
   margin-left: 80px;
 
-  justify-content: space-between;
+  justify-content: center;
 }
 .text-subscribe {
   font-style: normal;
@@ -465,12 +466,13 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 
   color: #ffffff;
 }
 .subscribe-form {
   margin-right: 24px;
-  margin-top: 16px;
+
   height: 40px;
   width: 264px;
   border: 1px solid #ffffff;
@@ -480,6 +482,10 @@ img {
   background-color: transparent;
   padding-left: 16px;
 }
+/* .form-telegram {
+  display: flex;
+  justify-content: center;
+} */
 .subscribe-svg {
   fill: #ffffff;
 }
@@ -502,7 +508,11 @@ img {
 
   color: #ffffff;
 }
-
+/* .form-div-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .footer-wrap {
   display: flex;
   align-items: center;
@@ -873,7 +883,4 @@ img {
   left: 19px;
   top: 50%;
   transform: translateY(-50%);
-}
-.fooot-wrap {
-  position: relative;
 }
