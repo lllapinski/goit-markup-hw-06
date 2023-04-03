@@ -84,7 +84,6 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  border: solid 2px coral;
 }
 .head-container {
   border-bottom: 1px solid var(--border-color);
@@ -866,6 +865,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.04em;
   color: #ffffff;
+  margin-top: 24px;
 }
 
 .send-btn:hover,
