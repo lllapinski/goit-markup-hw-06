@@ -934,3 +934,6 @@ img {
 .modal-checkbox:focus + .checkbox-text span {
   border-color: var(--hover-color);
 }
+.privacy-policy {
+  color: var(--add-color);
+}
